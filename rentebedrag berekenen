@@ -1,0 +1,8 @@
+bedrag = int(input("geef het bedrag :"))
+rente = float(input("geef de rente :"))
+uitkomst = bedrag / 100
+uitkomst1 = uitkomst * rente
+print("te betalen rente is :", uitkomst1)
+totaal = uitkomst1 + bedrag
+termijnBedrag = totaal / 12
+print(f"het termijn bedrag is {termijnBedrag:.2f}")
