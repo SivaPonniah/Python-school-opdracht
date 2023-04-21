@@ -1,0 +1,21 @@
+naam = input("Wat is je naam? ")
+verplichte_aanwezigheid = 120 / 100 * 80
+cijfer1 = float(input("Wat is je eerste cijfer? "))
+cijfer2 = float(input("Wat is je tweede cijfer? "))
+cijfer3 = float(input("Wat is je derde cijfer? "))
+cijfer4 = float(input("Wat is je vierde cijfer? "))
+cijfer5 = float(input("Wat is je vijfde cijfer? "))
+
+gemiddelde = (cijfer1 + cijfer2 + cijfer3 + cijfer4 + cijfer5) / 5
+print("Je gemiddelde is:", gemiddelde)
+
+if gemiddelde >= 7.5:
+    aanwezigheid = float(input("Hoeveel dagen ben je aanwezig geweest? "))
+    print(f"Je bent {aanwezigheid} van de {verplichte_aanwezigheid} dagen aanwezig geweest.")
+
+    if aanwezigheid >= verplichte_aanwezigheid:
+        print("Je bent een uitstekende student!")
+    else:
+        print("Je bent geen uitstekende student.")
+else:
+    print("Je gemiddelde is te laag om te beoordelen op basis van aanwezigheid.")
